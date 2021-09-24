@@ -1,4 +1,4 @@
-import { yupResolver } from "@hookform/resolvers";
+import { yupResolver } from "@hookform/resolvers/yup";
 import Typography from "@material-ui/core/Typography";
 import React from "react";
 import { useForm } from "react-hook-form";
@@ -6,6 +6,7 @@ import { Form } from "./components/Form";
 import { Input } from "./components/Input";
 import { MainContainer } from "./components/MainContainer";
 import { PrimaryButton } from "./components/PrimaryButton";
+import * as yup from "yup";
 
 const schema = yup.object().shape({
   firstName: yup
