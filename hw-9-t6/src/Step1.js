@@ -20,7 +20,7 @@ const schema = yup.object().shape({
 });
 
 export const Step1 = () => {
-  const { register, handleSubmit, errors } = useForm({
+  const { register, handleSubmit, formState: {errors} } = useForm({
     mode: "onBlur",
     resolver: yupResolver(schema),
   });
