@@ -13,11 +13,11 @@ export const PrimaryButton = ({ children, ...props }) => {
 
   return (
     <Button
-      className={styles.root}
       type="submit"
       fullWidth
       variant="contained"
       color="primary"
+      className={styles.root}
       {...props}
     >
       {children}

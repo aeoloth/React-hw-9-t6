@@ -1,6 +1,5 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import TextField from "@material-ui/core/TextField";
-import { forwardRef } from "react";
 
 export const Input = forwardRef((props, ref) => {
   return (
