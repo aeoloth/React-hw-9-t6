@@ -44,6 +44,7 @@ export const Step2 = () => {
     mode: "onBlur",
     resolver: yupResolver(schema),
   });
+  
   const hasPhone = watch("hasPhone");
 
   const onSubmit = (data) => {
